@@ -1,0 +1,93 @@
+ .Header {
+    position: fixed;
+    top: 0; /* Stick it to the top */
+    height: 13%;
+    width: 100vw;
+    display: grid;
+    font-size: calc(10px + 2vmin);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .icon {
+
+     width: 18px;
+     height: 18px;
+     background-color: transparent;
+     background: none;
+  }
+
+  .Nav1 {
+    display: grid;
+    grid-template-columns: 15% repeat(7, 12%);
+    align-items: center;
+    justify-items: center;
+    background-color: #2f3c55;
+  }
+  .Nav1 button {
+
+    display: block;
+    background: none;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+  }
+  .Nav1 button:hover {
+    background-color: #00c196;
+  } 
+
+  .noHover{
+    pointer-events: none;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .Nav2 {
+    display: grid;
+    grid-template-columns: repeat(7, 12%);
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .Nav2 button {
+
+    display: block;
+    background: none;
+    height: 100%;
+    width: 100%;
+    color: #2f3c55;
+    font-size: 15px;
+    border: none;
+  }
+  .Nav2 button:hover {
+    background-color: #00c196;
+  }
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    height: fit-content;
+    overflow: auto;
+    background-color: #2f3c55;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+
+  .dropdown-content label {
+    display: block;
+    color: white;
+    width: 90%;
+    text-align: left;
+    font-size: 15px;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content label:hover {
+    color: #FFFFFF;
+    background-color: #08c099;
+  }
